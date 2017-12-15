@@ -1,8 +1,3 @@
-# kadai
-
-# hndrh
-
-## Description
 
 (2)CSS 課題
 
