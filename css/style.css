@@ -1,0 +1,74 @@
+body {
+font-family: "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN,  "Yu Gothic", YuGothic,  Arial, "メイリオ", Meiryo, sans-serif;
+}
+.tab-content .menu-box{
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.tab-content .menu-box:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #e9e9e9;
+  z-index: 1;
+  box-sizing:border-box;
+}
+.tab-content .menu-box:before {
+  z-index: 1;
+}
+
+.tab-content input[type="radio"] {
+  display: none;
+}
+.tab-content label {
+  display: inline-block;
+  margin: 0 8px;
+  padding: 0 20px;
+  font-size:18px;
+  line-height: 50px;
+  border: 2px solid #e9e9e9;
+  background: #f1f1f1;
+  color:#c7c7c8;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 3px 3px 0 0;
+  box-sizing: border-box;
+}
+.tab-content label:hover,
+.tab-content input[type="radio"]:checked + label {
+    background: #fafafa;
+    color: #92979a;
+    z-index: 2;
+    border-bottom-color: #fafafa;
+	box-sizing: border-box;
+}
+
+.tab-content .tab-box {
+  max-width: 1600px;
+  height: 160px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fafafa;
+}
+
+.tab-content > .tab-box > div {
+  display: none;
+}
+
+#tab1:checked ~ .tab-box > #tabView1 {
+  display: block;
+}
+
+#tab2:checked ~ .tab-box > #tabView2 {
+  display: block;
+}
+
+#tab3:checked ~ .tab-box > #tabView3 {
+  display: block;
+}
